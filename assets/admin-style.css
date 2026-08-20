@@ -1,0 +1,82 @@
+/**
+ * Biker T5 - Admin Styles
+ */
+
+.biker-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px 20px;
+    padding: 12px 0;
+}
+
+.biker-field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.biker-field-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.biker-field-group label {
+    margin-bottom: 6px;
+    color: #1d2327;
+    font-size: 13px;
+}
+
+.biker-field-group input[type="text"],
+.biker-field-group input[type="number"],
+.biker-field-group select,
+.biker-field-group textarea {
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.biker-field-group input:focus,
+.biker-field-group select:focus,
+.biker-field-group textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+.field-desc {
+    font-size: 12px;
+    color: #646970;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.biker-badge-tag {
+    background-color: #e7f3fe;
+    color: #185abc;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #c2e0ff;
+}
+
+.biker-order-items-table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.biker-order-items-table th {
+    background: #f0f0f1;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccd0d4;
+    font-weight: 600;
+}
+
+.biker-order-items-table td {
+    padding: 8px 10px;
+    border: 1px solid #ccd0d4;
+    vertical-align: middle;
+}
