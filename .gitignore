@@ -1,0 +1,8 @@
+# Ignore WordPress core files and heavy uploads/cache
+**/wp-admin/
+**/wp-includes/
+**/cache/
+**/upgrade/
+*.log
+*.zip
+*.tar.gz

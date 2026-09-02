@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ Biber Helmets | Mũ Bảo Hiểm Chính Hãng ECE 22.06</title>
+  <meta name="description" content="Trang chủ Biber Helmets - Chuyên mũ bảo hiểm Fullface, 3/4, Lật hàm chính hãng AGV, Shoei, HJC. Đạt tiêu chuẩn an toàn quốc tế ECE 22.06 & DOT.">
+  
+  <!-- Global Fonts: Inter & Roboto (Theo Yêu Cầu PDF Step 1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* ==========================================================================
+       1. GLOBAL COLORS & SITE SETTINGS (Theo Yêu Cầu PDF Mục 1.2 & 3.1)
+       ========================================================================== */
+    :root {
+      /* Global Colors */
+      --global-color-primary: #ffb703;     /* Primary Brand Color */
+      --global-color-secondary: #161b22;   /* Secondary Dark Surface */
+      --global-color-text: #f0f6fc;        /* Primary Text */
+      --global-color-muted: #8b949e;       /* Muted Text */
+      --global-color-accent: #00f5d4;      /* Accent Color */
+      --global-color-bg: #0a0c10;          /* Background Dark */
+      --global-color-border: rgba(255, 255, 255, 0.1);
+      
+      /* Global Fonts */
+      --font-primary: 'Inter', sans-serif;
+      --font-secondary: 'Roboto', sans-serif;
+    }
+    
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--global-color-bg);
+      color: var(--global-color-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Container Utility */
+    .elementor-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       2. HEADER / NAVBAR (Cấu Trúc Standard Elementor Header)
+       ========================================================================== */
+    .elementor-header {
+      background: rgba(10, 12, 16, 0.95);
+      border-bottom: 1px solid var(--global-color-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .site-logo i {
+      color: var(--global-color-primary);
+      font-size: 26px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      color: var(--global-color-text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: color 0.2s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--global-color-primary);
+    }
+
+    /* ==========================================================================
+       3. ELEMENTOR BOX MODEL: SECTION → COLUMN → WIDGET (Theo PDF Mục 1.1 & Lab 1)
+       ========================================================================== */
+    
+    /* SECTION HERO (Khối lớn nhất, full width) */
+    .elementor-section-hero {
+      padding: 80px 0;
+      background: radial-gradient(circle at 75% 30%, rgba(255, 183, 3, 0.08) 0%, transparent 60%);
+      border-bottom: 1px solid var(--global-color-border);
+    }
+
+    /* SECTION CONTAINING 2 COLUMNS */
+    .elementor-row {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+
+    /* COLUMN (Cột 1: Trái & Cột 2: Phải) */
+    .elementor-column-50 {
+      flex: 1;
+      width: 50%;
+    }
+
+    /* WIDGET HEADING (Thành phần Tiêu đề H1 - Size 48px Desktop, 28px Mobile) */
+    .elementor-widget-heading h1 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .elementor-widget-heading h1 span {
+      color: var(--global-color-primary);
+    }
+
+    /* WIDGET TEXT EDITOR (Thành phần Đoạn văn - Size 18px) */
+    .elementor-widget-text-editor p {
+      font-size: 18px;
+      color: var(--global-color-muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    /* WIDGET BUTTON (Theo Prompt Custom CSS PDF Mục 2.2: Hover Glow & Scale) */
+    .elementor-widget-button .btn-glow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--global-color-primary);
+      color: #000000;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 16px 36px;
+      border-radius: 99px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+
+      /* Hiệu ứng Custom CSS theo đúng PDF Mục 2.2 */
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Selector Hover theo yêu cầu PDF: Scale 1.05 & Box-shadow Glow */
+    .elementor-widget-button .btn-glow:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 183, 3, 0.6);
+    }
+
+    /* WIDGET IMAGE (Ảnh nén WebP theo PDF Mục 4) */
+    .elementor-widget-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 1px solid var(--global-color-border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      display: block;
+    }
+
+    /* ==========================================================================
+       4. SECTION SẢN PHẨM & SEO SILO STRUCTURE (Theo PDF Mục 1.4 & Step 5)
+       ========================================================================== */
+    .elementor-section-products {
+      padding: 80px 0;
+    }
+
+    .elementor-widget-heading h2 {
+      font-size: 32px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--global-color-muted);
+      margin-bottom: 48px;
+      font-size: 16px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--global-color-secondary);
+      border: 1px solid var(--global-color-border);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--global-color-primary);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .product-card .price {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--global-color-primary);
+      margin-top: auto;
+      padding-top: 10px;
+    }
+
+    /* ==========================================================================
+       5. RESPONSIVE MOBILE OPTIMIZATION (Theo PDF HOMEWORK Nhiệm vụ 1)
+       ========================================================================== */
+    @media (max-width: 768px) {
+      /* Padding 16px - 20px hai bên lề để không dính mép màn hình */
+      .elementor-container {
+        padding: 0 18px;
+      }
+
+      .elementor-section-hero {
+        padding: 40px 0;
+      }
+
+      /* Xếp chồng 2 Column theo thứ tự dọc */
+      .elementor-row {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .elementor-column-50 {
+        width: 100%;
+      }
+
+      /* Giảm font-size H1 xuống 28px trên Mobile để không bị trào viền */
+      .elementor-widget-heading h1 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 14px;
+      }
+
+      /* Giảm font-size đoạn văn môt tả trên Mobile */
+      .elementor-widget-text-editor p {
+        font-size: 15px;
+        margin-bottom: 24px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ELEMENTOR HEADER -->
+  <header class="elementor-header">
+    <div class="elementor-container">
+      <div class="header-inner">
+        <a href="#" class="site-logo">
+          <i class="fa-solid fa-helmet-safety"></i>
+          <span>BIBER<span style="color: var(--global-color-primary);">HELMETS</span></span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#products">Sản Phẩm</a></li>
+          <li><a href="#seo-blog">Bài Viết SEO</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ELEMENTOR SECTION HERO (Cấu trúc Section -> Column -> Widget chuẩn PDF) -->
+  <section class="elementor-section-hero">
+    <div class="elementor-container">
+      <div class="elementor-row">
+        
+        <!-- COLUMN 1 (Cột Trái chứa Heading, Text Editor, Button CTA) -->
+        <div class="elementor-column-50">
+          
+          <!-- Widget 1: Heading H1 (Global Font Inter, 48px Desktop / 28px Mobile) -->
+          <div class="elementor-widget-heading">
+            <h1>Chinh Phục Mọi Nẻo Đường Với <span>Mũ Bảo Hiểm Biber</span></h1>
+          </div>
+
+          <!-- Widget 2: Text Editor (Sub-headline) -->
+          <div class="elementor-widget-text-editor">
+            <p>Bảo vệ tối đa hành trình phượt của bạn với các dòng mũ Fullface, 3/4 và Lật hàm chính hãng AGV, Shoei, HJC đạt chuẩn an toàn quốc tế ECE 22.06 & DOT.</p>
+          </div>
+
+          <!-- Widget 3: Button (Custom CSS Hover Glow & Scale 1.05 theo Yêu Cầu PDF Mục 2.2) -->
+          <div class="elementor-widget-button">
+            <a href="#products" class="btn-glow">
+              <i class="fa-solid fa-bolt"></i> Khám Phá Sản Phẩm
+            </a>
+          </div>
+
+        </div>
+
+        <!-- COLUMN 2 (Cột Phải chứa Image Nén WebP theo PDF Mục 4) -->
+        <div class="elementor-column-50">
+          <div class="elementor-widget-image">
+            <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=800&q=80" alt="Mũ Bảo Hiểm Fullface AGV K1 S Nén WebP">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ELEMENTOR SECTION SẢN PHẨM NỔI BẬT -->
+  <section class="elementor-section-products" id="products">
+    <div class="elementor-container">
+      
+      <div class="elementor-widget-heading">
+        <h2>Sản Phẩm Mũ Bảo Hiểm Nổi Bật</h2>
+      </div>
+      <p class="section-subtitle">Đồng bộ từ cấu trúc Data Architecture & WooCommerce</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=800&q=80" alt="AGV K1 S">
+          <h3>Mũ Fullface AGV K1 S Solid Black</h3>
+          <p style="font-size: 13px; color: var(--global-color-muted);">Chuẩn an toàn ECE 22.06</p>
+          <div class="price">3.950.000 ₫</div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=800&q=80" alt="Shoei X-Fifteen">
+          <h3>Mũ Fullface Shoei X-Fifteen White</h3>
+          <p style="font-size: 13px; color: var(--global-color-muted);">Chuẩn JIS, SNELL & ECE</p>
+          <div class="price">18.500.000 ₫</div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1575844693280-a420df2e4704?auto=format&fit=crop&w=800&q=80" alt="KYT Venom">
+          <h3>Mũ 3/4 KYT Venom Thor Marvel</h3>
+          <p style="font-size: 13px; color: var(--global-color-muted);">Chuẩn ECE 22.05</p>
+          <div class="price">2.200.000 ₫</div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1608508060274-1c31754c44d1?auto=format&fit=crop&w=800&q=80" alt="LS2 FF906">
+          <h3>Mũ Lật Hàm LS2 FF906 Advant Carbon</h3>
+          <p style="font-size: 13px; color: var(--global-color-muted);">Sợi Carbon 180°</p>
+          <div class="price">12.500.000 ₫</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
