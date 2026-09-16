@@ -13,3 +13,6 @@ $RECYCLE.BIN/
 *.njsproj
 *.sln
 *.sw?
+
+# WordPress backups
+app/public/wp-content/ai1wm-backups/
