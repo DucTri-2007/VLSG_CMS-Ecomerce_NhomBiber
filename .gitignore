@@ -12,7 +12,6 @@ wp-content/ai1wm-backups/
 logs/
 **/logs/
 *.log
-conf/
 
 # Ignore archives
 *.zip
