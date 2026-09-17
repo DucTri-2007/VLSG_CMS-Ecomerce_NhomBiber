@@ -1,0 +1,27 @@
+# Ignore WordPress heavy backups (> 100MB vuot qua gioi han GitHub)
+*.wpress
+**/ai1wm-backups/
+wp-content/ai1wm-backups/
+
+# Ignore WordPress core (khong can thiet dua len git vi la code mac dinh cua WP)
+**/wp-admin/
+**/wp-includes/
+**/upgrade/
+
+# Ignore server logs & runtime
+logs/
+**/logs/
+*.log
+conf/
+
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
