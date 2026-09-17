@@ -1,0 +1,37 @@
+[30-Aug-2026 09:25:18 UTC] WordPress database error Table 'local.wp_woocommerce_attribute_taxonomies' doesn't exist for query SELECT * FROM wp_woocommerce_attribute_taxonomies WHERE attribute_name != '' ORDER BY attribute_name ASC; made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/woocommerce/woocommerce.php'), WC, WooCommerce::instance, WooCommerce->__construct, WooCommerce->init_hooks, Automattic\WooCommerce\Internal\ProductAttributes\VisualAttributeTermAdmin->register, wc_get_attribute_taxonomies
+[02-Sep-2026 02:47:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in C:\Users\DELL\Local Sites\biker-helmet\app\public\wp-content\themes\twentytwentyfour\functions.php:144
+Stack trace:
+#0 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\wp-content\themes\twentytwentyfour\functions.php on line 144
+[02-Sep-2026 04:10:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'post_excerpt' doesn't have a default value in C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php:172
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php(172): mysqli_stmt->execute()
+#1 C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php(189): insert_seo_post(Object(mysqli), 'H\xC6\xB0\xE1\xBB\x9Bng D\xE1\xBA\xABn ...', 'huong-dan-do-ki...', '\n<!-- wp:image ...', '2026-09-06 09:0...', 'k\xC3\xADch th\xC6\xB0\xE1\xBB\x9Bc ...', 'H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...')
+#2 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php on line 172
+[02-Sep-2026 04:10:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'post_excerpt' doesn't have a default value in C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php:172
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php(172): mysqli_stmt->execute()
+#1 C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php(189): insert_seo_post(Object(mysqli), 'H\xC6\xB0\xE1\xBB\x9Bng D\xE1\xBA\xABn ...', 'huong-dan-do-ki...', '\n<!-- wp:image ...', '2026-09-06 09:0...', 'k\xC3\xADch th\xC6\xB0\xE1\xBB\x9Bc ...', 'H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...')
+#2 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\create_scheduled_seo_posts.php on line 172
+[02-Sep-2026 04:17:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Conversion from collation utf8mb3_general_ci into utf8mb4_unicode_520_ci impossible for parameter in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php:281
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php(281): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php on line 281
+[02-Sep-2026 04:17:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Conversion from collation utf8mb3_general_ci into utf8mb4_unicode_520_ci impossible for parameter in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php:281
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php(281): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php on line 281
+[02-Sep-2026 04:18:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Conversion from collation utf8mb3_general_ci into utf8mb4_unicode_520_ci impossible for parameter in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php:281
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php(281): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php on line 281
+[02-Sep-2026 04:19:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Conversion from collation utf8mb3_general_ci into utf8mb4_unicode_520_ci impossible for parameter in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php:281
+Stack trace:
+#0 C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php(281): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\Users\DELL\Local Sites\biker-helmet\app\public\update_homepage_db.php on line 281

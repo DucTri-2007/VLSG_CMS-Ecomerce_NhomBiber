@@ -8,10 +8,6 @@ wp-content/ai1wm-backups/
 **/wp-includes/
 **/upgrade/
 
-# Ignore server logs & runtime
-logs/
-**/logs/
-*.log
 
 # Ignore archives
 *.zip
